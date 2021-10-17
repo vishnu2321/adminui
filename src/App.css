@@ -1,38 +1,137 @@
-.App {
+body{
+  overflow-x: hidden;
+}
+
+.users-view{
+  width: 100%;
+  margin: 0.5% 0 0.8% 0;
   text-align: center;
+  border-spacing: 0 20px;
+  border-collapse:unset;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td,th{
+  padding-bottom: 6px;
+  border-bottom: 2px solid gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.checkbox{
+  text-align: left;
+  padding-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.p-n-p{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page-numbers-row{
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-number{
+  margin: 0px 9px;
+  padding: 10px;
+  background-color:aqua;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.page-number:focus{
+  background-color: rgb(27, 138, 138);
+}
+
+.search-bar{
+  margin: 8px 30px 8px 30px;
+  display: flex;
+  border: 2px solid gray;
+  border-radius: 50px;
+}
+
+.input{
+  width: 100vw;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: none;
+  margin-left: 10px;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.search-icon{
+  height: 18px;
+  width: 18px;
+  align-self: center;
+  cursor: pointer;
+  padding: 8px;
+  margin-right: 2px;
+}
+
+.search-icon:focus{
+  background-color: gray;
+}
+
+.clear-results{
+  align-self: center;
+  margin-left: 10px;
+  background-color: red;
+  padding: 6px;
+}
+
+.icon-group{
+  display: flex;
+  justify-content:center;
+}
+
+.edit-icon{
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.delete-icon{
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#search-by{
+  align-self: center;
+  margin-right: 20px;
+}
+
+.list{
+  height: 20px;
+  align-self: center;
+}
+
+.menu-p{
+  display: flex;
+  justify-content: center;
+}
+
+.delete-selected{
+  padding: 4px;
+  background-color: red;
+}
+
+.icon{
+  height:18px;
+  width:18px;
+  align-self: center;
+  background-color: gray;
+  border-radius: 50px;
+  padding: 8px;
+  margin:0px 9px;
+  cursor: pointer;
 }
